@@ -5,13 +5,16 @@ html, body {
   margin: 0;
   padding: 0;
 }
+
 /*Navbar styling*/
+
 .navbar {
   position: relative;
   height: 50px;
   text-align: right;
   top: 4%;
 }
+
 .links {
   font-family: 'Montserrat', sans-serif;
   text-decoration: none;
@@ -20,28 +23,36 @@ html, body {
   transition: border-color 0.1s ease-in;
   margin-right: 10px;
 }
+
 .links:hover {
   color: #ef9d6e;
 }
+
 .links:active {
   color: #ef9d6e;
   border-color: #ef9d6e;
 }
+
 /*End of navbar styling*/
+
 main {
   position: relative;
   height: 100%;
 }
+
 h2 {
   font-size: 22px;
 }
+
 /*Start of first container styling*/
+
 .first-container {
   position: relative;
   background: url("../images/plant-large.jpg") no-repeat center;
   background-size: cover;
   height: 85%;
 }
+
 .name {
   font-family: 'Inconsolata', monospace;
   position: relative;
@@ -51,6 +62,7 @@ h2 {
   color: #ef9d6e;
   font-size: 25px;
 }
+
 .job {
   font-family: 'Inconsolata', monospace;
   position: relative;
@@ -59,30 +71,37 @@ h2 {
   font-size: 20px;
   margin-left: 10px;
 }
+
 /*End of styling first container*/
 
 /*Start of styling second container*/
+
 .second-container {
   position: relative;
   top: 10%;
   text-align: center;
   font-family: 'Montserrat', sans-serif;
 }
+
 .about-me-title {
   color: #484a47;
 }
+
 .personal-info {
   color: #484a47;
   font-size: 18px;
   margin-left: 5px;
   margin-right: 5px;
 }
+
 span {
   color: #ef9d6e;
 }
+
 /*End of second-container styling
 
 /*Start of third-container styling*/
+
 .third-container {
   position: relative;
   top: 20%;
@@ -91,16 +110,20 @@ span {
   padding-top: 10px;
   padding-bottom: 40px;
 }
+
 .portfolio-title {
   font-family: 'Montserrat', sans-serif;
   color: #484a47;
 }
+
 img {
   width: 85%;
 }
+
 .img-container {
   position: relative;
 }
+
 .text-container {
   position: absolute;
   font-family: 'Inconsolata', monospace;
@@ -109,11 +132,13 @@ img {
   top: 12%;
   width: 100%;
 }
+
 .project-title {
   color: #242424;
   padding-bottom: 20px;
   font-size: 18px;
 }
+
 .github-button {
   padding: 8px;
   border-radius: 3px;
@@ -122,19 +147,24 @@ img {
   color: #484a47;
   font-weight: 550;
 }
+
 .github-button:active {
   padding: 12px;
 }
-.img-container:hover img{
+
+.img-container:hover img {
   transition: 1s ease;
   -webkit-filter: blur(7px);
 }
-.img-container:hover .text{
+
+.img-container:hover .text {
   visibility: visible;
 }
+
 /*End of third container*/
 
 /*Start of footer styling*/
+
 footer {
   position: relative;
   font-family: 'Montserrat', sans-serif;
@@ -145,20 +175,26 @@ footer {
   color: #484a47;
   background: #ef9d6e;
 }
+
 footer p {
   font-size: 16px;
 }
+
 .email {
   color: white;
 }
+
 .fab {
   margin: 8px;
   color: #484a47;
 }
+
 .fab:active {
   color: white;
 }
+
 /*Media queries*/
+
 @media screen and (min-width: 600px) {
   h2 {
     font-size: 27px;

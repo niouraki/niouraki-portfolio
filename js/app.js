@@ -2,6 +2,7 @@ let about = document.querySelector('#about-button');
 let portfolio = document.getElementById('portfolio-button');
 let contact = document.getElementById('contact-button');
 
+//handle smooth scrolling
 about.addEventListener('click', function() {
   window.scroll({
     top: 420,
