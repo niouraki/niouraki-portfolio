@@ -154,7 +154,7 @@ img {
 
 .img-container:hover img {
   transition: 1s ease;
-  -webkit-filter: blur(7px);
+  filter: blur(7px);
 }
 
 .img-container:hover .text {

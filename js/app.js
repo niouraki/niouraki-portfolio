@@ -8,18 +8,18 @@ about.addEventListener('click', function() {
     top: 420,
     behavior: "smooth"
   });
-})
+});
 
 portfolio.addEventListener('click', function() {
   window.scroll({
     top: 780,
     behavior: "smooth"
   });
-})
+});
 
 contact.addEventListener('click', function() {
   window.scroll({
     top: 3000,
     behavior: "smooth"
   });
-})
+});
