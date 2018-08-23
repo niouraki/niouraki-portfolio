@@ -1,4 +1,4 @@
-let about = document.querySelector('#about-button');
+let about = document.getElementById('about-button');
 let portfolio = document.getElementById('portfolio-button');
 let contact = document.getElementById('contact-button');
 
