@@ -129,7 +129,7 @@ img {
   font-family: 'Inconsolata', monospace;
   visibility: hidden;
   text-align: center;
-  top: 12%;
+  top: 10%;
   width: 100%;
 }
 
@@ -154,7 +154,7 @@ img {
 
 .img-container:hover img {
   transition: 1s ease;
-  filter: blur(25px);
+  transform: translateY(-5px) scale(0.9);
 }
 
 .img-container:hover .text {
