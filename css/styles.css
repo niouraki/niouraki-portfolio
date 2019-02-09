@@ -166,7 +166,7 @@ img {
 } */
 
 .img-container:hover .text-container {
-  opacity: 1;
+  opacity: .8;
 }
 /*End of third container*/
 
