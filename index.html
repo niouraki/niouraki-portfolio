@@ -7,172 +7,195 @@
   <meta name="description" content="This is my front-end development portfolio">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata|Montserrat" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 </head>
 
 <body>
-  <header class="navbar">
-    <nav role="navigation" aria-label="navigation area" tabindex="0">
-      <a id="about-button" class="links" href="#about" role="button">About</a>
-      <a id="portfolio-button" class="links" href="#portfolio" role="button">Portfolio</a>
-      <a id="contact-button" class="links" href="#contact" role="button">Contact</a>
+  <header class="header" id="header">
+    <div class="burger">
+      <input type="checkbox" class="nav-checkbox" id="nav-check">
+      <label for="nav-check" class="burger-label">
+          <i class="fas fa-bars fa-2x burger-icon"></i>
+      </label>
+
+      <div class="burger-box">
+          <ul>
+            <li><a id="home-button" href="#home" role="button">Home</a></li>
+            <li><a id="about-button" href="#about" role="button">About</a></li>
+            <li><a id="portfolio-button"href="#portfolio" role="button">Portfolio</a></li>
+            <li><a id="contact-button" href="#contact" role="button">Contact</a></li>      
+          </ul>
+        </div>
+    </div>
+    <nav class="navigation" role="navigation" aria-label="navigation area" tabindex="0">
+      <a id="home-button" class="nav-btn" href="#home" role="button">Home</a>
+      <a id="about-button" class="nav-btn" href="#about" role="button">About</a>
+      <a id="portfolio-button" class="nav-btn" href="#portfolio" role="button">Portfolio</a>
+      <a id="contact-button" class="nav-btn" href="#contact" role="button">Contact</a>
     </nav>
   </header>
 
-  <section class="first-container">
-    <h1 class="name" tabindex="0">Chara Niouraki</h1>
-    <p class="job" tabindex="0">Front-End Developer</p>
-  </section>
-
-  <section class="second-container">
-    <h2 class="about-me-title" tabindex="0">About me</h2>
-    <p class="personal-info" tabindex="0">Hi. My name is <span>Chara Niouraki</span> and I am a front-end developer living in Greece.</p>
-    <p class="personal-info" tabindex="0">My passion is creating beautiful, responsive and accessible web experiences.</p>
-    <p class="personal-info" tabindex="0">Let's start talking.</p>
-  </section>
-
-  <section class="third-container">
-    <h2 class="portfolio-title" tabindex="0">Portfolio</h2>
-    <div class="images" aria-label="my projects">
-
-      <div class="img-container" tabindex="0">
-        <a href="https://niouraki.github.io/udacity-memory/" target="_blank"><img src="images/memorylr.jpg" alt="A picture showing my memory game project"></a>
-        <div class="text-container">
-          <h3 class="text project-title" tabindex="0">Memory Game Project</h3>
-          <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JAVASCRIPT</li>
-          </ul>
-        </div>
+  <main>
+    <section class="home">
+      <div class="home-text-box">
+        <h1 class="heading-primary">
+          <span class="heading-primary-name">Chara Niouraki</span>
+          <span class="heading-primary-job">Front-end developer</span>
+        </h1>
       </div>
+    </section>
 
-      <div class="img-container" tabindex="0">
-        <a href="https://niouraki.github.io/udacity-arcade/" target="_blank"><img src="images/arcadelr.jpg" alt="A picture showing my arcade game project"></a>
-        <div class="text-container">
-          <div class="text">
-            <h3 class="project-title" tabindex="0">Arcade Game Project</h3>
-            <ul>
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>JAVASCRIPT</li>
-            </ul>
+    <section class="about">
+      <div class="about-text-box">
+        <h2 class="about-heading">About me</h2>
+        <p class="about-personal-info" tabindex="0">Hi. My name is <span class="about-personal-info__name">Chara Niouraki</span> and I am a front-end developer living in Greece.</p>
+        <p class="about-personal-info" tabindex="0">My passion is creating beautiful, responsive and accessible web experiences.</p>
+        <p class="about-personal-info" tabindex="0">Let's start talking.</p>
+        <a href="files/CV.pdf" target="_blank" role="button" class="cv-button"><i class="fas fa-file-download"></i> resume</a>
+      </div>
+    </section>
+
+    <section class="portfolio">
+      <h2 class="portfolio-heading">Portfolio</h2>
+      <div class="container">
+
+        <div class="content">
+          <img src="images/memorylr.jpg" alt="picture of memory game project">
+          <div class="content-details slide-up">
+            <div class="content-text">
+                <h3>Memory Game</h3>
+                <p>html - css - javascript</p>
+                <a href="https://niouraki.github.io/udacity-memory/" target="_blank" role="button" class="project-btn">Learn more &rarr;</a>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div class="img-container" tabindex="0">
-        <a href="https://github.com/niouraki/udacity-feedreader" target="_blank"><img src="images/feedreaderlr.jpg" alt="A picture showing my feedreader project"></a>
-        <div class="text-container">
-          <h3 class="project-title" tabindex="0">Feedreader Project</h3>
-          <ul>
-            <li>JASMINE</li>
-          </ul>
+        <div class="content">
+            <img src="images/arcadelr.jpg" alt=" picture of arcade game project">
+            <div class="content-details slide-up">
+              <div class="content-text">
+                  <h3>Arcade Game</h3>
+                  <p>html - css - javascript</p>
+                  <a href="https://niouraki.github.io/udacity-arcade/" target="_blank" role="button" class="project-btn">Learn more &rarr;</a>
+              </div>
+            </div>
         </div>
-      </div>
 
-      <div class="img-container" tabindex="0">
-        <a href="https://github.com/niouraki/mws-restaurant-stage-1" target="_blank"><img src="images/restaurantlr.jpg" alt="A picture showing my restaurant app project"></a>
-        <div class="text-container">
-          <h3 class="project-title" tabindex="0">Restaurant App Project</h3>
-          <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JAVASCRIPT</li>
-            <li>MAPBOX</li>
-            <li>LEAFLET</li>
-          </ul>
-        </div>
-      </div>
+          <div class="content">
+              <img src="images/feedreaderlr.jpg" alt="picture of feedreader project">
+              <div class="content-details slide-up">
+                <div class="content-text">
+                    <h3>Feedreader</h3>
+                    <p>Jasmine</p>
+                    <a href="https://github.com/niouraki/udacity-feedreader" target="_blank" role="button" class="project-btn">Learn more &rarr;</a>
+                </div>
+              </div>
+          </div>
 
-      <div class="img-container" tabindex="0">
-        <a href="https://github.com/niouraki/reactnd-project-myreads-starter" target="_blank"><img src="images/myreadslr.jpg" alt="A picture showing my myreads app project"></a>
-        <div class="text-container">
-          <h3 class="project-title" tabindex="0">MyReads App Project</h3>
-          <ul>
-            <li>REACT.JS</li>
-          </ul>
-        </div>
-      </div>
+            <div class="content">
+                <img src="images/restaurantlr.jpg" alt="picture of restaurant app project">
+                <div class="content-details slide-up">
+                  <div class="content-text">
+                      <h3>Restaurant App</h3>
+                      <p>html - css - javascript - mapbox - leaflet</p>
+                      <a href="https://github.com/niouraki/udacity-restaurant-app" target="_blank" role="button" class="project-btn">Learn more &rarr;</a>
+                  </div>
+                </div>
+            </div>
 
-      <div class="img-container" tabindex="0">
-        <a href="https://github.com/niouraki/Udacity-React-Map-Project" target="_blank"><img src="images/maplr.jpg" alt="A picture showing my googlemap react project"></a>
-        <div class="text-container">
-          <h3 class="project-title" tabindex="0">React GoogleMaps Project</h3>
-          <ul>
-            <li>REACT.JS</li>
-            <li>GOOGLE MAPS API</li>
-          </ul>
-        </div>
-      </div>
+              <div class="content">
+                  <img src="images/myreadslr.jpg" alt="picture of my reads app project">
+                  <div class="content-details slide-up">
+                    <div class="content-text">
+                        <h3>My Reads App</h3>
+                        <p>React.js</p>
+                        <a href="https://github.com/niouraki/reactnd-project-myreads-starter" target="_blank" role="button" class="project-btn">Learn more &rarr;</a>
+                    </div>
+                  </div>
+              </div>
 
-      <div class="img-container" tabindex="0">
-        <a href="https://niouraki.github.io/mario-cart/" target="_blank"><img src="images/cart.jpg" alt="A picture showing my Mario Cart project"></a>
-        <div class="text-container">
-          <h3 class="project-title" tabindex="0">Mario Cart Project</h3>
-          <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>CSS-ANIMATIONS</li>
-          </ul>
-        </div>
-      </div>
+              <div class="content">
+                  <img src="images/maplr.jpg" alt="picture of my react google maps project">
+                  <div class="content-details slide-up">
+                    <div class="content-text">
+                        <h3>React Google Maps</h3>
+                        <p>React.js - Google Maps Api </p>
+                        <a href="https://github.com/niouraki/Udacity-React-Map-Project" target="_blank" role="button" class="project-btn">Learn more &rarr;</a>
+                    </div>
+                  </div>
+              </div>
 
-      <div class="img-container" tabindex="0">
-        <a href="https://niouraki.github.io/freecodecamp-survey/" target="_blank"><img src="images/survey.jpg" alt="A picture showing my freecodecamp survey project"></a>
-        <div class="text-container">
-          <h3 class="project-title" tabindex="0">Survey Project</h3>
-          <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-          </ul>
-        </div>
-      </div>
+              <div class="content">
+                  <img src="images/cart.jpg" alt="picture of my mario cart project">
+                  <div class="content-details slide-up">
+                    <div class="content-text">
+                        <h3>Mario Cart</h3>
+                        <p>html - css - javascript - animations</p>
+                        <a href="https://niouraki.github.io/mario-cart/" target="_blank" role="button" class="project-btn">Learn more &rarr;</a>
+                    </div>
+                  </div>
+              </div>
 
-      <div class="img-container" tabindex="0">
-        <a href="https://github.com/niouraki/punchbag-game" target="_blank"><img src="images/punchbag.jpg" alt="A picture showing my Vue.js punchbag project"></a>
-        <div class="text-container">
-          <h3 class="project-title" tabindex="0">Punchbag Project</h3>
-          <ul>
-            <li>VUE.JS</li>
-          </ul>
-        </div>
-      </div>
+              <div class="content">
+                  <img src="images/survey.jpg" alt="picture of my survey project">
+                  <div class="content-details slide-up">
+                    <div class="content-text">
+                        <h3>Survey</h3>
+                        <p>html - css</p>
+                        <a href="https://niouraki.github.io/freecodecamp-survey/" target="_blank" role="button" class="project-btn">Learn more &rarr;</a>
+                    </div>
+                  </div>
+              </div>
 
-      <div class="img-container" tabindex="0">
-        <a href="https://hobby-tracker-a9788.firebaseapp.com/#/" target="_blank"><img src="images/hobbies.jpg" alt="A picture showing my Vue.js hobbies project"></a>
-        <div class="text-container">
-          <h3 class="project-title" tabindex="0">My Hobbies Project</h3>
-          <ul>
-            <li>VUE.JS CLI 3</li>
-            <li>VUE ROUTER</li>
-            <li>MATERIALZE</li>
-            <li>FIREBASE</li>
-          </ul>
-        </div>
-      </div>
+              <div class="content">
+                  <img src="images/punchbag.jpg" alt="picture of my punchbag project">
+                  <div class="content-details slide-up">
+                    <div class="content-text">
+                        <h3>Punchbag</h3>
+                        <p>Vue.js</p>
+                        <a href="https://github.com/niouraki/punchbag-game" target="_blank" role="button" class="project-btn">Learn more &rarr;</a>
+                    </div>
+                  </div>
+              </div>
 
-      <div class="img-container" tabindex="0">
-      <a href="https://rakun-form-b6367.firebaseapp.com/" target="_blank"><img src="images/form.jpg" alt="A picture showing my Vue.js form project"></a>
-        <div class="text-container">
-          <h3 class="project-title" tabindex="0">Form Project</h3>
-          <ul>
-            <li>VUE.JS CLI 3</li>
-            <li>FIREBASE</li>
-          </ul>
-        </div>
+              <div class="content">
+                  <img src="images/hobbies.jpg" alt="picture of my hobbies project">
+                  <div class="content-details slide-up">
+                    <div class="content-text">
+                        <h3>My Hobbies</h3>
+                        <p>Vue.js cli 3 - Vue Router - Materialize - Firebase</p>
+                        <a href="https://hobby-tracker-a9788.firebaseapp.com/#/" target="_blank" role="button" class="project-btn">Learn more &rarr;</a>
+                    </div>
+                  </div>
+              </div>
+
+              <div class="content">
+                  <img src="images/form.jpg" alt="picture of my form project">
+                  <div class="content-details slide-up">
+                    <div class="content-text">
+                        <h3>Form Project</h3>
+                        <p>Vue.js cli 3 - Firebase</p>
+                        <a href="https://rakun-form-b6367.firebaseapp.com/" target="_blank" role="button" class="project-btn">Learn more &rarr;</a>
+                    </div>
+                  </div>
+              </div>
+
       </div>
+      <div class="arrow-box">
+        <a href="#header" class="arrow-btn" id="arrow-button" role="button"><i class="fas fa-arrow-circle-up arrow"></i></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-text-box">
+      <h2>Contact me</h2>
+      <p tabindex="0">Do you want to chat? Send me an email at <span class="email">niouraki@gmail.com</span></p>
+      <a href="https://github.com/niouraki" role="button" target="_blank" aria-label="go to my github profile"><i class="fab fa-github fa-4x"></i></a>
+      <a href="https://www.linkedin.com/in/chara-niouraki-50681291/" role="button" target="_blank" aria-label="go to my linkedin profile"><i class="fab fa-linkedin-in fa-4x"></i></a>
     </div>
-  </div>
-  </section>
-
-  <footer>
-    <h2 tabindex="0">Contact me</h2>
-    <p tabindex="0">Do you want to chat? Send me an email at <span class="email">niouraki@gmail.com</span></p>
-      <a href="https://github.com/niouraki" role="button" target="_blank" aria-label="go to my github profile"><i class="fab fa-github fa-2x"></i></a>
-      <a href="https://www.linkedin.com/in/chara-niouraki-50681291/" role="button" target="_blank" aria-label="go to my linkedin profile"><i class="fab fa-linkedin-in fa-2x"></i></a>
-      <a href="https://www.freecodecamp.org/niouraki" role="button" target="_blank" aria-label="go to my freecodecamp profile"><i class="fab fa-free-code-camp fa-2x"></i></a>
-    </footer>
+  </footer>
 
   <script src="js/app.js"></script>
 </body>
